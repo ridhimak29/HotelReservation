@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Popular Attractions</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrapmin.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header th:insert="fragments/header.html :: header"></header>
+<div class="container" style="min-height: 650px">
+    <div class="row mt-4 margin-left-10px border-bottom-color" >
+        <h2>Popular Attractions</h2>
+    </div>
+    <div class="row mt-4 margin-left-10px">
+        <div class="class=col-md-4 on-hover room-width margin-all">
+            <div class="card border-0 mb-4">
+                <a href="#">
+                    <img alt="American Dream Nickelodeon Universe Indoor Theme" class="card-img-top event-img-height" src="images/theme_park.jpeg">
+                </a>
+                <h5 class="font-weight-medium mt-3 margin-all">
+                    <a class="text-decoration-none link" target="_blank" href="https://www.americandream.com/venue/nickelodeon-universe/?&utm_source=google&utm_medium=SEO&utm_campaign=gmb">
+                        American Dream Nickelodeon Universe Indoor Theme</a>
+                </h5>
+            </div>
+        </div>
+        <div class="class=col-md-4 on-hover room-width margin-all">
+            <div class="card border-0 mb-4">
+                <a href="#">
+                    <img alt="Meadowlands Racing & Entertainment" class="card-img-top event-img-height" src="images/horse.jpeg">
+                </a>
+                <h5 class="font-weight-medium mt-3 margin-all">
+                    <a class="text-decoration-none link" target="_blank" href="https://playmeadowlands.com/">
+                        Meadowlands Racing & Entertainment</a>
+                </h5>
+            </div>
+        </div>
+        <div class="class=col-md-4 on-hover room-width margin-all">
+            <div class="card border-0 mb-4">
+                <a href="#">
+                    <img alt="MetLife Stadium" class="card-img-top event-img-height" src="images/metlife.jpeg">
+                </a>
+                <h5 class="font-weight-medium mt-3 margin-all">
+                    <a class="text-decoration-none link" target="_blank" href="https://www.metlifestadium.com/">
+                        MetLife Stadium</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4 margin-left-10px">
+        <div class="class=col-md-4 on-hover room-width margin-all">
+            <div class="card border-0 mb-4">
+                <a href="#">
+                    <img alt="Tilt Museum" class="card-img-top event-img-height" src="images/tilt.jpeg">
+                </a>
+                <h5 class="font-weight-medium mt-3 margin-all">
+                    <a class="text-decoration-none link" target="_blank"  href="https://tiltmuseums.com/">
+                        Tilt Museum</a>
+                </h5>
+            </div>
+        </div>
+        <div class="class=col-md-4 on-hover room-width margin-all">
+            <div class="card border-0 mb-4">
+                <a href="#">
+                    <img alt="City Tours" class="card-img-top event-img-height" src="images/city-tour.jpeg">
+                </a>
+                <h5 class="font-weight-medium mt-3 margin-all">
+                    <a class="text-decoration-none link" target="_blank" href="http://www.citytours.com/en/city_tours_nosotros.asp">
+                        City Tours NYC</a>
+                </h5>
+            </div>
+        </div>
+        <div class="class=col-md-4 on-hover room-width margin-all">
+            <div class="card border-0 mb-4">
+                <a href="#">
+                    <img alt="Izod Center" class="card-img-top event-img-height" src="images/izod.jpeg">
+                </a>
+                <h5 class="font-weight-medium mt-3 margin-all">
+                    <a class="text-decoration-none link" href="#">
+                        Izod Center</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+<footer th:insert="fragments/footer.html :: footer"></footer>
+</body>
+</html>

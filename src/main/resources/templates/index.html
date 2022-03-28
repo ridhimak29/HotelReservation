@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hotel Reservation System</title>
+	<link href="css/bootstrapmin.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrapmin.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header th:insert="fragments/header.html :: header"> </header>
+<div class="bg-img">
+	<div th:insert="fragments/search.html :: search"> </div>
+	<div th:insert="fragments/room.html :: room"> </div>
+</div>
+<footer th:insert="fragments/footer.html :: footer"></footer>
+</body>
+</html>

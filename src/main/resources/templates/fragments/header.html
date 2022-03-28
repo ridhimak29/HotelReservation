@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header th:fragment="header">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/home">Hotel<span style="color: #007bff"> Ridhima </span> </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto" id="ul-header">
+				<li class="nav-item">
+					<a class="nav-link active" href="/home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/about">About US</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/dining">Dining</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/attraction">Attractions</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0" onsubmit="return false;">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-check btn-primary my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+</header>
+</body>
+</html>

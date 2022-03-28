@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrapmin.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header th:insert="fragments/header.html :: header"></header>
+
+<div class="container" style="min-height: 600px">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+        <tr>
+            <td align="center"
+                style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 25px;">
+                <img src="https://img.icons8.com/carbon-copy/100/000000/checked-checkbox.png" width="125" height="120"
+                     style="display: block; border: 0px;"/><br>
+                <h2 style="font-size: 30px; font-weight: 800; line-height: 36px; color: #007bff; margin: 0;"> Thank You
+                    for
+                    choosing us for your stay! </h2>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"
+                style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 10px;">
+                <h5> Confirmation Number : <strong><span th:utext="${confirmationNumber}"></span></strong></h5>
+            </td>
+        </tr>
+        <tr>
+            <td align="left"
+                style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; padding-top: 10px;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 24px;"> Your reservation for <span th:text="${roomName}"></span> is confirmed
+                    from <strong><span th:text="${checkInDate}"></span></strong> to <strong><span th:text="${checkOutDate}"></span></strong> for <strong><span th:text="${people}"></span></strong> guests.</p>
+            </td>
+        </tr>
+    </table>
+</div>
+<footer th:insert="fragments/footer.html :: footer"></footer>
+
+</body>
+</html>

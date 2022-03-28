@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Dinning Services</title>
+    <link href="css/bootstrapmin.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrapmin.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header th:insert="fragments/header.html :: header"></header>
+
+<!-- Start Content -->
+<div class="container" id="home" style="min-height: 600px">
+    <img alt="Catering" src="images/img_hamburger.jpeg" style="width: 100%;max-height: 300px;margin: 5px;">
+    <!-- Start Content -->
+    <div class="row">
+
+        <!-- Menu -->
+        <div class="col w3-padding-top-64" id="menu">
+            <h1 class="w3-center">Our Menu</h1>
+            <div class="w3-row">
+                <div class="w3-col l6 m6 w3-padding-large">
+                    <h4>Bread Basket</h4>
+                    <p class="w3-text-grey">
+                        Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                    <h4>Belgian Waffle</h4>
+                    <p class="w3-text-grey">
+                        Vanilla flavored batter with malted flour 7.50</p><br>
+                    <h4>Scrambled eggs</h4>
+                    <p class="w3-text-grey">
+                        Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+                    <h4>Blueberry Pancakes</h4>
+                    <p class="w3-text-grey">
+                        With syrup, butter and lots of berries 8.50</p>
+                </div>
+            </div>
+            <div class="w3-container w3-text-grey">
+                <p>We offer full-service catering for any event, large or small. We understand your needs and we will
+                    cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to
+                    contact us.</p>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="w3-col l6 m6 w3-padding-large">
+                <img alt="Menu" class="w3-round w3-image w3-opacity-min" src="images/waffle.jpeg"
+                     style="width:500px">
+            </div>
+        </div>
+        <!-- End Content -->
+
+    </div>
+    <div class="row">
+        <!-- Contact -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact Information</h1>
+
+            <p class="w3-text-blue-grey w3-large">
+                <b>1 Normal Ave, Montclair, NJ 07043 New Jersey, NJ</b></p>
+            <p>You can also contact us on below information
+            <p>Phone : 973-123-2323</p>
+            <p>Email :  hotelridhima@gmail.com</p>
+        </div>
+        <!-- End Content -->
+    </div>
+</div>
+<footer th:insert="fragments/footer.html :: footer"></footer>
+</body>
+</html>

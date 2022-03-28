@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:fragment="room">
+    <div class="blog-home2 py-5" id="search-result"></div>
+    <div>
+        <input type="hidden" name="selectedRoomId" id="selectedRoomId">
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="margin-top:10px;">
+                    <h5 class="modal-title" id="loginModalTitle">Login / Sign up</h5>
+                    <button onclick="hide_login_form()" type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="success-message" class="alert-success"></p>
+                    <p id="error-messgae" class="alert-danger"></p>
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#signup">Sign Up</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="login">
+                            <div th:insert="fragments/login.html :: login"> </div>
+                        </div>
+                        <div class="tab-pane container fade" id="signup">
+                            <div th:insert="fragments/signup.html :: signup"> </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
