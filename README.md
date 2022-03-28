@@ -17,6 +17,10 @@ Software Programs
 
 How To Run:
 
-1. Go to application.properties -> create the DB using Mysql using the same name "hotel"
-2. For the first time -> run -> spring.jpa.hibernate.ddl-auto=create -> later change to ->  spring.jpa.hibernate.ddl-auto=update
-3. Run "HotelReservationApplication"
+1. Login to mysql from command line mysql -uroot and run the following query.
+   ```
+   CREATE SCHEMA hotel;
+   CREATE USER 'hotel_user'@'%' IDENTIFIED BY 'hotel_user';
+   GRANT ALL ON hotel.* TO 'hotel_user'@'%';
+    ```
+2. Build the project using "mvn clean install" and then Run "HotelReservationApplication"
