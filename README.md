@@ -19,8 +19,8 @@ How To Run:
 
 1. Login to mysql from command line mysql -uroot and run the following query.
    ```
-   CREATE SCHEMA hotel;
-   CREATE USER 'hotel_user'@'%' IDENTIFIED BY 'hotel_user';
-   GRANT ALL ON hotel.* TO 'hotel_user'@'%';
+   CREATE SCHEMA ridhimakohlidatabase;
+   CREATE USER 'ridhimakohli'@'%' IDENTIFIED BY 'ridhimakohlipass';
+   GRANT ALL ON ridhimakohlidatabase.* TO 'ridhimakohli'@'%';
     ```
 2. Build the project using "mvn clean install" and then Run "HotelReservationApplication"
